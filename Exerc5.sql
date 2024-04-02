@@ -13,7 +13,7 @@ SELECT
  , customerid
  , orderdate
  , subtotal
- , (taxamt * 100) / subtotal as percentual_imp
+ ,ROUND ((taxamt * 100) / subtotal, 2) as percentual_imp 
  FROM sales.salesorderheader
  ORDER BY subtotal DESC
 
