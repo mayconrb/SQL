@@ -3,6 +3,6 @@
 --Classifique a saída em ordem crescente no sobrenome.
 --Tabela de exemplo: Person.Person
 
-SELECT *
+SELECT * 
 FROM person.person AS p
 ORDER BY lastname ASC
